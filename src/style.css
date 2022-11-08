@@ -66,7 +66,10 @@ html {
 }
 
 .time-buttons {
-  margin-top: 50px;
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 .time-buttons .hours,
@@ -78,12 +81,17 @@ html {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
+  display: block;
 }
 
 .time-buttons span {
-  color: #8198d0;
-  font-size: 40px;
-  line-height: 1;
+  color: #a5b6ee;
+  font-size: 12px;
+}
+
+.dot {
+  margin: 0 7px;
+  margin-bottom: -20px;
 }
 
 .select-buttons .start,
@@ -93,10 +101,19 @@ html {
   margin-top: 40px;
 }
 
-.select-buttons .start {
+.start {
   background-image: url(./img/start-disabled.png);
   margin-right: 12px;
 }
-.select-buttons .reset {
+.reset {
   background-image: url(./img/reset-disabled.png);
+}
+.start-able {
+  background-image: url(./img/start-default.png);
+}
+.reset-able {
+  background-image: url(./img/reset-default.png);
+}
+.pause {
+  background-image: url(./img/pause.png);
 }
